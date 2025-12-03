@@ -1,0 +1,42 @@
+<div class="custom-cf7">
+<div class="custom-cf7-holder blurry-bg">
+<div class="field-holder">
+<label for="full_name">الاسم الكامل <span>(ضروري)</span></label>
+[text full_name id:full_name placeholder "أدخل الإسم كاملا"]
+</div>
+<div class="field-holder">
+<label for="phone_number">رقم الجوال <span>(ضروري)</span></label>
+[text phone_number id:phone_number class:phone_number placeholder "+967589878789"]
+</div>
+<div class="field-holder">
+<label for="email">البريد الإلكتروني <span>(ضروري)</span></label>
+[email* your-email id:email placeholder "example@gmail.com"]
+</div>
+<div class="field-holder textarea-file-holder">
+<div class="textarea-field">
+<label for="message">نص الرسالة <span>(ضروري)</span></label>
+<div class="textarea-wrapper">
+[textarea message id:message class:message placeholder "اكتب لنا ما الذي تتوقعه من فريق Growink"]
+</div>
+</div>
+<div class="custom-file-upload">
+<label for="upload_file">
+<span class="upload-file-text">ارفع ملف او صورة</span>
+[file upload_file limit:2mb filetypes:pdf|txt|docs|jpg|png id:upload_file class:upload_file]
+</label>
+</div>
+<div>
+</div>
+</div>
+<div class="form-btns">
+<div class="submit-btn-holder form-btn">
+<div class="btn-bg"></div>
+[submit id:submit class:submit "ارسال"]
+</div>
+<div class="reset-form form-btn">
+<div class="btn-bg"></div>
+<button type="reset">مسح الإستبيان</button>
+</div>
+</div>
+</div>
+</div>

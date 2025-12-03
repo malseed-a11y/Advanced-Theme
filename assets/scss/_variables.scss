@@ -1,0 +1,23 @@
+// Colors
+$primary-color: #003F87;
+$light-primary-color: #7098c0;
+$secondary-color: #FCC400;
+$color-3: #D6A956;
+$color-4: #FBE2C4;
+$color-5: #01AE9D;
+$color-6: #23A4DB;
+$menu-color: #5a5a5a;
+$menu-bg-color: #eeeeee;
+$body-background: linear-gradient(140deg, rgba(225,239,255,1) 40%, rgba(221,255,251,1) 100%);
+$light-color: #fff;
+$dark-color: #000;
+
+/* ===[ Start Mixins ]=== */
+// Line Limiter
+@mixin text_line_limiter($lines) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    overflow: hidden;
+}
+/* ===[ End Mixins ]=== */
