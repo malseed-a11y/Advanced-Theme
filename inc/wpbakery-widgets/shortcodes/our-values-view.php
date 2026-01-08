@@ -41,7 +41,7 @@ function our_values_section_shortcode($atts)
                         <?php
                         $title = isset($item['value_title']) ? $item['value_title'] : '';
                         $icon  = !empty($item['value_icon'])
-                            ? wp_get_attachment_image_url((int)$item['value_icon'], 'full')
+                            ? wp_get_attachment_image_url(absint($item['value_icon']), 'full')
                             : '';
                         ?>
 

@@ -24,14 +24,14 @@ function statistics_section_shortcode($atts)
     ], $atts);
 
     $stat1_icon_url = ! empty($atts['stat1_icon'])
-        ? wp_get_attachment_image_url($atts['stat1_icon'], 'full')
+        ? wp_get_attachment_image_url(absint($atts['stat1_icon']), 'full')
         : '';
 
     $stat2_icon_url = ! empty($atts['stat2_icon'])
-        ? wp_get_attachment_image_url($atts['stat2_icon'], 'full')
+        ? wp_get_attachment_image_url(absint($atts['stat2_icon']), 'full')
         : '';
     $stat3_icon_url = ! empty($atts['stat3_icon'])
-        ? wp_get_attachment_image_url($atts['stat3_icon'], 'full')
+        ? wp_get_attachment_image_url(absint($atts['stat3_icon']), 'full')
         : '';
 
     ob_start();
@@ -59,7 +59,7 @@ function statistics_section_shortcode($atts)
                             <span class="item-value">
                                 <span>+</span>
                                 <span class="odometer" data-value="<?php echo esc_html($atts['stat1_value']); ?>">
-                                   <?php echo esc_html($atts['stat1_value']); ?>
+                                    <?php echo esc_html($atts['stat1_value']); ?>
                                 </span>
                             </span>
                             <span class="item-title">
@@ -77,7 +77,7 @@ function statistics_section_shortcode($atts)
                             <span class="item-value">
                                 <span>+</span>
                                 <span class="odometer" data-value="<?php echo esc_html($atts['stat2_value']); ?>">
-                                   <?php echo esc_html($atts['stat2_value']); ?>
+                                    <?php echo esc_html($atts['stat2_value']); ?>
                                 </span>
                             </span>
                             <span class="item-title">

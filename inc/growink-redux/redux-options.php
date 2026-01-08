@@ -40,9 +40,6 @@ $args['footer_text'] = '<p>' . esc_html__('Theme options for Growink. Footer set
 
 Redux::set_args($opt_name, $args);
 
-/**
- * Footer Section with a single "footer_text" option
- */
 Redux::set_section(
     $opt_name,
     [

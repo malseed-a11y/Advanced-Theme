@@ -24,8 +24,8 @@ function about_us_section_shortcode($atts)
         $goals = vc_param_group_parse_atts($atts['goals_group']);
     }
 
-    $message_icon_url = wp_get_attachment_image_url($atts['message_icon'], 'full');
-    $vision_icon_url  = wp_get_attachment_image_url($atts['vision_icon'], 'full');
+    $message_icon_url = wp_get_attachment_image_url(absint($atts['message_icon']), 'full');
+    $vision_icon_url  = wp_get_attachment_image_url(absint($atts['vision_icon']), 'full');
 
     ob_start();
 ?>
@@ -87,7 +87,7 @@ function about_us_section_shortcode($atts)
                         $title = isset($goal['goals_title']) ? $goal['goals_title'] : '';
                         $text  = isset($goal['goals_text']) ? $goal['goals_text'] : '';
                         $icon  = !empty($goal['goals_icon'])
-                            ? wp_get_attachment_image_url((int)$goal['goals_icon'], 'full')
+                            ? wp_get_attachment_image_url(absint($goal['goals_icon']), 'full')
                             : '';
                     ?>
 

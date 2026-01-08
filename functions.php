@@ -202,6 +202,12 @@ require get_template_directory() . '/inc/customizer-font.php';
 
 
 /*
+custom menu new cpts settings page
+*/
+require get_template_directory() . '/inc/custom-menu-new-cpts/custom-menu-new-cpts.php';
+
+
+/*
  growink widgets init
 */
 require get_template_directory() . '/inc/ClockWidget.php';
@@ -212,8 +218,10 @@ Redux
 */
 
 require get_template_directory() . '/inc/growink-redux/redux-options.php';
-
-
+/*
+HTML block cpt
+*/
+require get_template_directory() . '/inc/cpt-dynamic-template/cpt-html-block.php';
 
 /**
  * Load Jetpack compatibility file.

@@ -33,7 +33,7 @@ function hero_images_shortcode($atts)
 
 
 
-                        $image_url = wp_get_attachment_image_url($slide['slide_image'], 'full');
+                        $image_url = wp_get_attachment_image_url(absint($slide['slide_image']), 'full');
 
                         if (! $image_url) {
                             continue;
