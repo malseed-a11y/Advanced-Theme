@@ -1,4 +1,9 @@
 <?php
+// custom settings page to make new cpts
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 add_action('admin_menu', 'my_custom_settings_menu');
 function my_custom_settings_menu()
 {

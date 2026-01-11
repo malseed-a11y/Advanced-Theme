@@ -1,5 +1,8 @@
 <?php
-
+// wordpress widget for clock
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class ClockWidget extends WP_Widget
 {

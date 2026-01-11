@@ -1,10 +1,9 @@
 <?php
 
-/**
- * Theme Font Customizer (Refresh Transport)
- *
- * @package growink
- */
+// Make a customizer that change the site font
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 function growink_register_font_customizer($wp_customize)
 {

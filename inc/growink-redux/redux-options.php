@@ -1,10 +1,12 @@
 <?php
 
-/**
- * Growink Theme Options - Footer Only
- */
+// Redux settings to change the footer text and color
 
-defined('ABSPATH') || exit;
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 
 if (! class_exists('Redux')) {
     return;

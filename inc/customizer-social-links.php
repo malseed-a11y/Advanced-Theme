@@ -1,5 +1,8 @@
 <?php
-
+// make a customizer that add social midea icon & link
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 function growink_register_social_customizer($wp_customize)
 {

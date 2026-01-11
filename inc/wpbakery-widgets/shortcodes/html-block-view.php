@@ -20,7 +20,6 @@ if (!function_exists('html_block_shortcode')) {
         // make sure it's the correct post type
         if ($post->post_type !== 'html_blocks') return '';
         $block_content =  $post->post_content;
-
         ob_start();
 ?>
         <section class="normal-margin">
